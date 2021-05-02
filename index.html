@@ -51,6 +51,14 @@
 
       highlight.classList.add('highlight');
       document.body.append(highlight);
+
+      function highlightLink() {
+        console.log('highlighted');
+      }
+
+      triggers.forEach((item) =>
+        item.addEventListener('mouseenter', highlightLink)
+      );
     </script>
   </body>
 </html>
